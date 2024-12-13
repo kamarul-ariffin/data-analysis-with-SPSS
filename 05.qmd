@@ -1,0 +1,13 @@
+# Test of Data Normality
+
+<div>
+  <div style="float: right; position: relative; top: 0px; padding: 30px;">
+  ![](images/normal.png)
+  </div>
+"Normal" data are data that are drawn (come from) a population that has a normal distribution.
+This distribution is unarguably the most important and the most frequently used distribution in
+both the theory and application of statistics. There are two types of data normality;\
+
+1. Univariate data normality (Skewness & Kurtosis)\
+2. Multivariate data normality (Mardia Test)\
+</div>

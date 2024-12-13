@@ -1,0 +1,21 @@
+{
+  "hash": "e80a9c90baef720852d8aa6105394897",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Introduction\n\n## Types of Variables\n\n• What are variables you would consider in buying a second hand bike?\\\n• Brand (Trek, Raleigh)\\\n• Type (road, mountain, racer)\\\n::: {.floatting}\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::include_graphics(\"images/bicycle.png\")\n```\n\n::: {.cell-output-display}\n![](images/bicycle.png){fig-pos='H' width=30% style=\"float:right; padding:10px\"}\n:::\n:::\n\n\n\n• Components (Shimano, no name)\\\n• Age\\\n• Condition (Excellent, good, poor)\\\n• Price\\\n• Frame size\\\n• Number of gears\\\n:::\n\n\n## Parametric vs Non-parametric\n• Parametric stats are more powerful than non-parametric stats- for real numbers- example like t-test\\\n• Non-parametric stats are not as powerful but good for category variables – example like Mann-Whitney U (Likert)\\\n\n## Types of Scales\n• Nominal- objects or people are categorized according to some criterion (gender, job category)\\\n• Ordinal- Categories which are ranked according to characteristics (income- low, moderate, high)\\\n• Interval- contain equal distance between units of measure- but no zero (calendar years, temperature)\\\n• Ratio- has an absolute zero and consistent intervals (distance, weight)\\\n\n",
+    "supporting": [
+      "intro_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

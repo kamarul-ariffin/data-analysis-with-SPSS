@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Analysis with SPSS - 9&nbsp; Testing of means</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./10.html" rel="next">
+<link href="./08.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./09.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Testing of means</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Data Analysis with SPSS</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Input in SPSS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Transformation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Descriptive Statistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Test of Data Normality</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Test of outliers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Test of Data Reliability (Cronbach’s alpha)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis (EFA)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Testing of means</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Correlation Tests</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Regression Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#non-parametric" id="toc-non-parametric" class="nav-link active" data-scroll-target="#non-parametric"><span class="header-section-number">9.1</span> Non Parametric</a></li>
+  <li><a href="#parametric" id="toc-parametric" class="nav-link" data-scroll-target="#parametric"><span class="header-section-number">9.2</span> Parametric</a>
+  <ul class="collapse">
+  <li><a href="#one-sample-t-test" id="toc-one-sample-t-test" class="nav-link" data-scroll-target="#one-sample-t-test"><span class="header-section-number">9.2.1</span> One-sample t-test</a></li>
+  <li><a href="#independent-sample-t-test" id="toc-independent-sample-t-test" class="nav-link" data-scroll-target="#independent-sample-t-test"><span class="header-section-number">9.2.2</span> Independent Sample t-Test</a></li>
+  <li><a href="#paired-samples-t--test." id="toc-paired-samples-t--test." class="nav-link" data-scroll-target="#paired-samples-t--test."><span class="header-section-number">9.2.3</span> Paired Samples T -test.</a></li>
+  <li><a href="#one-way-anova" id="toc-one-way-anova" class="nav-link" data-scroll-target="#one-way-anova"><span class="header-section-number">9.2.4</span> One-way ANOVA</a></li>
+  <li><a href="#two-way-anova" id="toc-two-way-anova" class="nav-link" data-scroll-target="#two-way-anova"><span class="header-section-number">9.2.5</span> Two-way ANOVA</a></li>
+  <li><a href="#one-way-repeated-measure-anova" id="toc-one-way-repeated-measure-anova" class="nav-link" data-scroll-target="#one-way-repeated-measure-anova"><span class="header-section-number">9.2.6</span> One-way Repeated Measure ANOVA</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Testing of means</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Testing of means: This analysis illustrates that whether there is difference between two groups or among three group and it is significant.<br>
+</p>
+<p>Two Assumptions:<br>
+</p>
+<ol type="1">
+<li>If data does not come from normal distribution or sample size is small meaning that less than 30 then nonparametric test.<br>
+</li>
+<li>If data comes from large and normal distribution, then parametric test.<br>
+</li>
+</ol>
+<section id="non-parametric" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="non-parametric"><span class="header-section-number">9.1</span> Non Parametric</h2>
+<p><span style="color:red;">Assumption:</span><br>
+</p>
+<p>When data are not normally distributed then non parametric test is done.<br>
+</p>
+<ul>
+<li>Sample size is small (less than 30)<br>
+</li>
+<li>Data are not from normally distributing<br>
+</li>
+<li>When data is not normal any way<br>
+</li>
+<li>Regular statistics can’t be done<br>
+</li>
+</ul>
+<p><img src="images/non-para.png" class="img-fluid"></p>
+</section>
+<section id="parametric" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="parametric"><span class="header-section-number">9.2</span> Parametric</h2>
+<p><span style="color:red;">Assumptions:</span><br>
+</p>
+<p>If data comes from large and normal distribution, then parametric test.<br>
+</p>
+<p><span style="color:red;">Parametric Tests:</span><br>
+</p>
+<p>A. One sample test<br>
+B. Two sample test<br>
+- Independent sample ‘t’ test<br>
+- Paired sample ‘t’ test<br>
+C. More than two sample test (ANOVA)<br>
+</p>
+<section id="one-sample-t-test" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="one-sample-t-test"><span class="header-section-number">9.2.1</span> One-sample t-test</h3>
+<ul>
+<li>The One Sample t Test compares a sample mean to a hypothesized population mean to determine whether the two means are significantly different.<br>
+</li>
+<li>The One Sample t Test determines whether the sample mean is statistically different from a known or hypothesized population mean. The One Sample t Test is a parametric test.<br>
+</li>
+<li>This test is also known as: <span style="color:red;">Single Sample t Test</span><br>
+</li>
+<li>The variable used in this test is known as: <span style="color:red;">Test variable</span><br>
+</li>
+<li>In a One Sample t Test, the test variable is compared against a “test value”, which is a known or hypothesized value of the mean in the population.<br>
+</li>
+</ul>
+<p><span style="color:green;">The One Sample t-test determines whether the sample mean is statistically different from a known or hypothesized population mean.</span><br>
+</p>
+<p><span style="color:red;">The sample data must comply three conditions</span><br>
+</p>
+<p><span style="color:purple;">1. Scale data<br>
+2. Normally distributed data<br>
+3. Only one sample data<br>
+</span><br>
+</p>
+<p><strong>Example of one-sample t-test</strong><br>
+</p>
+<p>We assume that the hypothesized population mean is 3.<br>
+</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Hypothesis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothesis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Null Hypothesis: The sample mean is not significantly different from the hypothesized population mean<br>
+Alternative Hypothesis: The sample mean is significantly different from the hypothesized population mean<br>
+</p>
+</div>
+</div>
+<p>If p (sig value) is less than 0.05, then we reject the null hypothesis.<br>
+</p>
+<p><img src="images/slides/img_Page_087.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_088.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_089.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_090.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_091.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Decision
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since the significant value less than 0.05 which means we reject the null hypothesis. It indicates that sample mean is significantly different from the hypothesized population mean.</p>
+</div>
+</div>
+</section>
+<section id="independent-sample-t-test" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="independent-sample-t-test"><span class="header-section-number">9.2.2</span> Independent Sample t-Test</h3>
+<p>The Independent Samples t Test compares the means of two independent groups in order to determine whether there is statistical evidence that the associated population means are significantly different. The Independent Samples t Test is a parametric test.<br>
+</p>
+<p><img src="images/ind-t-test.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Hypothesis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothesis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span style="color:red;">Null hypothesis:</span> <span style="color:purple;">There is no significant difference between male and female towards GPA score.</span><br>
+<br>
+<span style="color:blue;">Alternate hypothesis:</span> <span style="color:purple;">There is a significant difference between male and female towards GPA score.</span><br>
+</p>
+</div>
+</div>
+<p>After Importing your data set, and providing names to variables, click on:<br>
+</p>
+<div style="text-align: center;">
+<p><span style="color:red;">ANALYZE → COMPARE MEANS → INDEPENDENT SAMPLES T TEST</span></p>
+</div>
+<p>T-TEST<br>
+</p>
+<ul>
+<li>For TEST VARIABLE, Select the dependent variable (GPA)<br>
+</li>
+<li>For GROUPING VARIABLE, Select the independent variable (Gender)<br>
+</li>
+</ul>
+<p><img src="images/slides/img_Page_096.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_097.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_098.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_099.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Decision
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since the significant value of P is less than 0.05 which is 0.011. It indicates that null hypothesis is rejected which refereeing that there is a significant difference between male and female for obtaining GPA score.<br>
+</p>
+<p><img src="images/ind-t-test-out1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="paired-samples-t--test." class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="paired-samples-t--test."><span class="header-section-number">9.2.3</span> Paired Samples T -test.</h3>
+<ul>
+<li>SPSS paired samples t-test is a procedure for testing whether the means of two metric variables are equal in same population. Both variables have been measured on the same cases.<br>
+</li>
+<li>Although “paired samples” suggests that multiple samples are involved, there’s really only one sample and two variables.<br>
+</li>
+<li>Below is the pre-test and post-test scores of a training program.<br>
+</li>
+</ul>
+<p><img src="images/paired-t-test.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Hypothesis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothesis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span style="color:red;">Null hypothesis:</span> <span style="color:purple;">There is no significant difference between pretest score and post-test score.</span><br>
+<br>
+<span style="color:blue;">Alternate hypothesis:</span> <span style="color:purple;">There is a significant difference between pre-test score and post-test score.</span><br>
+</p>
+</div>
+</div>
+<p>After Importing your data set, and providing names to variables, click on:<br>
+</p>
+<div style="text-align: center;">
+<p><span style="color:red;">ANALYZE → COMPARE MEANS → PAIRED SAMPLES T TEST</span></p>
+</div>
+<p>For PAIRED VARIABLES, Select the two dependent (response) variables (the analysis will be based on first variable minus second variable)<br>
+</p>
+<p><img src="images/slides/img_Page_104.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_105.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_106.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Results Observation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since the sig value (<em>p</em>) is less than 0.05 which is 0.000 that means null hypothesis is rejected and alternate hypothesis is accepted. It indicates that there is a significant difference of training scores between pre-test and post-test.<br>
+<br>
+<img src="images/paired-t-test-out1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="one-way-anova" class="level3" data-number="9.2.4">
+<h3 data-number="9.2.4" class="anchored" data-anchor-id="one-way-anova"><span class="header-section-number">9.2.4</span> One-way ANOVA</h3>
+<p><br>
+The one-way analysis of variance (ANOVA) is used to determine whether there are any statistically significant differences between the means of three or more independent (unrelated) groups.<br>
+<br>
+<strong>Example of one-way ANOVA</strong><br>
+</p>
+<div>
+<div style="float: right; position: relative; top: 0px; padding: 30px;">
+<img src="images/anova.png" class="img-fluid">
+</div>
+<p>There are three teaching method which are traditional, machine learning and both traditional &amp; M.L method. The scores obtained by students under these three teaching method. Now, one-way ANOVA is used to determine whether there are any statistically significant differences among the scores obtained by these three methods.</p>
+</div>
+<p><img src="images/slides/img_Page_110.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_111.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_112.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Results Observation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><br>
+The sig value for between groups is higher than 0.05 that indicates to accept null hypothesis. Similarly, pairwise result also showed insignificant.<br>
+<br>
+<img src="images/anova-out1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="two-way-anova" class="level3" data-number="9.2.5">
+<h3 data-number="9.2.5" class="anchored" data-anchor-id="two-way-anova"><span class="header-section-number">9.2.5</span> Two-way ANOVA</h3>
+<br>
+A test that allows one to make comparisons between the means of three or more groups of data, where two independent variables are considered. Two-Way ANOVA is an extension to the one-way ANOVA.<br>
+<br>
+<strong>Example of Two-way ANOVA</strong><br>
+<br>
+
+<div>
+<div style="float: right; position: relative; top: 0px; padding: 30px;">
+<img src="images/two-way-anova.png" class="img-fluid">
+</div>
+<p>For example, family members, income, and expenditure are the three variables. Family members and income are the independent variables and nominal data. Expenditure is dependent variable and scale data. So, we will observe here;<br>
+<br>
+1. Is there any significant differences of amount of monthly income and amount of monthly expenditure on shampoo purchase?<br>
+2. Is there any significant difference between number of family members in house and expenditure on shampoo purchase?<br>
+</p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Hypothesis to test by Two-way ANOVA">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothesis to test by Two-way ANOVA
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Null hypothesis 1: <em>Amount of monthly expenditure on shampoo for different income do not differ</em><br>
+</p>
+<p>Null hypothesis 2: <em>Amount of monthly expenditure on shampoo for different number of family members in house do not differ</em><br>
+</p>
+<p>Null hypothesis 3: <em>Amount of monthly expenditure on shampoo for the interaction of income and number of family members do not differ</em><br>
+</p>
+</div>
+</div>
+<p><img src="images/slides/img_Page_117.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_118.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Results Observation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since the income and family members with expenditure values are more than 0.05, therefore null hypothesis are accepted. However, for intercept null hypothesis is rejected as the p value is less than 0.05<br>
+</p>
+<p><img src="images/two-way-anova-out1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="one-way-repeated-measure-anova" class="level3" data-number="9.2.6">
+<h3 data-number="9.2.6" class="anchored" data-anchor-id="one-way-repeated-measure-anova"><span class="header-section-number">9.2.6</span> One-way Repeated Measure ANOVA</h3>
+<p><br>
+One-Way Repeated-Measures ANOVA. Analysis of Variance (ANOVA) is a common and robust statistical test that you can use to compare the mean scores collected from different conditions or groups in an experiment.<br>
+<br>
+<img src="images/slides/img_Page_121.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Hypothesis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothesis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span style="color:red;">Null Hypothesis:</span> There is no significant difference among the three different teaching methods.<br>
+<span style="color:green;">Alternative Hypothesis:</span> There is a significant difference among the three different teaching methods.<br>
+</p>
+</div>
+</div>
+<p><img src="images/slides/img_Page_123.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_124.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_125.png" class="img-fluid"></p>
+<p><img src="images/slides/img_Page_126.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Results Observation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since the p-value is &lt;.05. The null hypothesis is rejected. Therefore, we can say there is significant difference among the teaching methods.<br>
+</p>
+<p><img src="images/one-way-repeat-out1.png" class="img-fluid"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./08.html" class="pagination-link" aria-label="Exploratory Factor Analysis (EFA)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis (EFA)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./10.html" class="pagination-link" aria-label="Correlation Tests">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Correlation Tests</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

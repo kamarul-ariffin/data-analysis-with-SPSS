@@ -1,0 +1,17 @@
+# Test of Data Reliability (Cronbach's alpha)
+
+**Cronbach's alpha** is a measure of internal consistency, that is, how closely related a set of items are as a group. It is considered to be a measure of scale reliability\
+
+![](images/slides/img_Page_059.png)
+
+![](images/slides/img_Page_060.png)
+
+![](images/slides/img_Page_061.png)
+
+![](images/slides/img_Page_062.png)
+
+![](images/slides/img_Page_063.png)
+
+![](images/slides/img_Page_064.png)
+
+![](images/slides/img_Page_065.png)

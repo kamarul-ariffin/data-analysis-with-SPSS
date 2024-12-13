@@ -1,0 +1,25 @@
+# Correlation Tests
+
+Correlation is a statistical technique that shows how strongly two variables are related to each other or the degree of association between the two\
+
+![](images/slides/img_Page_130.png)
+
+![](images/slides/img_Page_131.png)
+
+![](images/slides/img_Page_132.png)
+
+![](images/slides/img_Page_133.png)
+
+::: {.callout-note title="Correlation Decision Criteria"}
+If r = from 0.75 to 0.95\
+Result: highly positive linear correlation\
+\
+If r = from 0.50 to 0.75\
+Result: medium positive linear correlation\
+\
+If r = from 0.25 to 0.50\
+Result: slight positive linear correlation\
+\
+If r = from 0.10 to 0.25\
+Result: Weak positive linear correlation\
+:::

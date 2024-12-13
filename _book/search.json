@@ -1,0 +1,252 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analysis with SPSS",
+    "section": "",
+    "text": "Preface\n\nStatistical Package for the Social Science (SPSS)\n\nConducted by:\n\nKamarul Ariffin Mansor\nSenior Lecturer\nUniversiti Teknologi MARA (UiTM)\nKedah Branch Campus\nMalaysia\n\n\nThis module provides a comprehensive guide to conducting data analysis using SPSS, a widely used statistical software. It is structured into a step-by-step process that covers the entire workflow, from data preparation to advanced statistical tests. Key components include:\n\n\nIntroduction: An overview of SPSS software and its role in statistical analysis. Data Inputs in SPSS Software: Instructions on importing and organizing data within SPSS, including file formats and data entry techniques.\n\nData Transformation: Techniques to prepare data for analysis, such as recoding variables and computing new ones.\n\nDescriptive Statistics: Procedures for summarizing and describing data distributions, including measures of central tendency and dispersion.\n\nTest of Data Normality: Methods for assessing the normality of data using skewness and kurtosis.\n\nTest of Outliers: Identification and handling of outliers in both univariate and multivariate data sets.\n\nTest of Data Reliability: Evaluation of the internal consistency of scales using Cronbach’s Alpha.\n\nExploratory Factor Analysis (EFA): Techniques to uncover underlying structures in the data and reduce dimensionality.\n\nT-Tests: Application of one-sample, independent sample, and paired sample t-tests to compare means across groups or conditions.\n\nANOVA Tests: Use of one-way, two-way, and repeated-measures ANOVA for analyzing variance among multiple groups.\n\nCorrelation Tests: Examination of relationships between variables using correlation coefficients.\n\nRegression Analysis: Implementation of simple and multiple linear regression to model relationships between dependent and independent variables.\n\nThe module equips users with practical knowledge and step-by-step guidance to conduct data analysis in SPSS effectively, catering to both beginners and intermediate users. It emphasizes the integration of statistical theory with practical application, making it a valuable resource for researchers, students, and professionals in various fields.\n\n\nResearch Framework\n\n\nWhat is SPSS?\n\n• Originally it is an acronym of Statistical Package for the Social Science but now it stands for Statistical Product and Service Solutions\n• One of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions\n\nSPSS Version\n\n– The earlier versions of SPSS ran on mainframe computers\n- SPSS 1 - 1968\n- SPSS 2 - 1983\n– SPSS/PC+ was first introduced in 1984\n- SPSS 5 - 1993\n– SPSS 6 for Windows was introduced in mid 1990’s\n- SPSS 6.1 - 1995\n- SPSS 7.5 - 1997\n- SPSS 8 - 1998\n- SPSS 9 - 1999\n- SPSS 10 - 1999\n- SPSS 11 - 2002\n- SPSS 12 - 2004\n- SPSS 13 - 2005\n- SPSS 14 - 2006\n– SPSS 15 - November 2006\n– SPSS 16 - April 2008\n– PASW Statistics 17 – December 2008\n– PASW Statistics 18 – August 2009\n– SPSS Statistics 19 – 2010\n– SPSS Statistics 20 – 2011\n– SPSS Statistics 21 – 2012\n– SPSS Statistics 22 – 2013\n– SPSS Statistics 23 – 2015\n- SPSS 24 - 2016, March\n- SPSS 25 - 2017, July\n- SPSS 26 - 2018\n- SPSS 27 - 2019, June (and 27.0.1 in November, 2020)\n- SPSS 28 - 2021, May\n- SPSS 29 - 2022, Sept\n- SPSS 30 - 2024, Sept\n\nSPSS is a software used for statistical analysis\nFirst released in 1968 and was developed by Normane H. Bent and C. Hadial Hull\nSince its release, SPSS was under SPSS Inc.\nHowever in July 28, 2009 SPSS was acquired by IBM for US$1.2 billion\nVersions 17 and 18 were known as PASW (Predictive and Analytical Software)\nVersion 19 was renamed as SPSS Statistics\n\nContents:\nStep by Step Data Analysis Process by SPSS\n\n\nIntroduction\n\nData Inputs in SPSS Software\n\nData Transformation\n\nDescriptive Statistics\n\nTest of Data Normality (skewness & kurtosis)\n\nTest of Outliers (univariate & multivariate)\n\nTest of Data Reliability (Cronbach’s Alpha)\n\nExploratory Factor Analysis (EFA)\n\nT-Tests (one sample, independent sample t-test, and paired sample t-test)\n\nANOVA Tests (one-way, two-way, and repetitive measure ANOVA)\n\nCorrelation Tests\n\nRegressions Analysis (Simple, and Multiple Linear Regression)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Types of Variables",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#types-of-variables",
+    "href": "intro.html#types-of-variables",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "What are variables you would consider in buying a second hand bike?\n\n\nBrand (Trek, Raleigh)\n\nType (road, mountain, racer)\n\nComponents (Shimano, no name)\n\nAge\n\nCondition (Excellent, good, poor)\n\nPrice\n\nFrame size\n\nNumber of gears",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#parametric-vs-non-parametric",
+    "href": "intro.html#parametric-vs-non-parametric",
+    "title": "1  Introduction",
+    "section": "1.2 Parametric vs Non-parametric",
+    "text": "1.2 Parametric vs Non-parametric\n\nParametric stats are more powerful than non-parametric stats- for real numbers- example like t-test\n\nNon-parametric stats are not as powerful but good for category variables – example like Mann-Whitney U (Likert)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#types-of-scales",
+    "href": "intro.html#types-of-scales",
+    "title": "1  Introduction",
+    "section": "1.3 Types of Scales",
+    "text": "1.3 Types of Scales\n\n\n\n\n\n\nNominal\n\n\n\nobjects or people are categorized according to some criterion (gender, job category)\n\n\n\n\n\n\n\n\nOrdinal\n\n\n\nCategories which are ranked according to characteristics (income- low, moderate, high)\n\n\n\n\n\n\n\n\nInterval\n\n\n\ncontain equal distance between units of measure- but no zero (calendar years, temperature)\n\n\n\n\n\n\n\n\nRatio\n\n\n\nhas an absolute zero and consistent intervals (distance, weight)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "02.html",
+    "href": "02.html",
+    "title": "2  Data Input in SPSS",
+    "section": "",
+    "text": "2.1 Data Inputs from Questionnaire to SPSS",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Input in SPSS</span>"
+    ]
+  },
+  {
+    "objectID": "02.html#likert-scale-data",
+    "href": "02.html#likert-scale-data",
+    "title": "2  Data Input in SPSS",
+    "section": "2.2 Likert Scale Data",
+    "text": "2.2 Likert Scale Data\n\nATTITUDE\nThis section is to understand your feelings towards knowledge sharing. Please circle the appropriate number on each scale.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Input in SPSS</span>"
+    ]
+  },
+  {
+    "objectID": "03.html",
+    "href": "03.html",
+    "title": "3  Data Transformation",
+    "section": "",
+    "text": "To transform data, you perform a mathematical operation on each observation, then use these transformed numbers in your statistical test.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Transformation</span>"
+    ]
+  },
+  {
+    "objectID": "04.html",
+    "href": "04.html",
+    "title": "4  Descriptive Statistics",
+    "section": "",
+    "text": "4.1 Frequency Analysis\nAfter Importing your data set, and providing names to variables, click on:\nChoose any variables to be analyzed and place them in box on right\nOptions include (For Categorical Variables):",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "04.html#frequency-analysis",
+    "href": "04.html#frequency-analysis",
+    "title": "4  Descriptive Statistics",
+    "section": "",
+    "text": "ANALYZE → DESCRIPTIVE STATISTICS → FREQUENCIES\n\n\n\nFrequency Tables\n\nPie Charts, Bar Charts",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "04.html#numerical-data",
+    "href": "04.html#numerical-data",
+    "title": "4  Descriptive Statistics",
+    "section": "4.2 Numerical Data",
+    "text": "4.2 Numerical Data\nAfter Importing your dataset, and providing names to variables, click on:\n\n\nANALYZE → DESCRIPTIVE STATISTICS → DESCRIPTIVES\n\nChoose any variables to be analyzed and place them in box on right Options include:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "05.html",
+    "href": "05.html",
+    "title": "5  Test of Data Normality",
+    "section": "",
+    "text": "“Normal” data are data that are drawn (come from) a population that has a normal distribution. This distribution is unarguably the most important and the most frequently used distribution in both the theory and application of statistics. There are two types of data normality;\n\n\nUnivariate data normality (Skewness & Kurtosis)\n\nMultivariate data normality (Mardia Test)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Test of Data Normality</span>"
+    ]
+  },
+  {
+    "objectID": "06.html",
+    "href": "06.html",
+    "title": "6  Test of outliers",
+    "section": "",
+    "text": "6.1 Test of Univariate outliers",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Test of outliers</span>"
+    ]
+  },
+  {
+    "objectID": "06.html#test-of-univariate-outliers",
+    "href": "06.html#test-of-univariate-outliers",
+    "title": "6  Test of outliers",
+    "section": "",
+    "text": "Univariate outliers criterion\n\n\n\nIf the Z-Score Value beyond the value +3.29 to -3.29 for a large sample size (more than 80) then there is outliers. If the Z-Score Value beyond the value +2.50 to -2.50 for the case of small sample size (less than 80 samples) then there is outliers.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Test of outliers</span>"
+    ]
+  },
+  {
+    "objectID": "06.html#test-of-multivariate-outliers",
+    "href": "06.html#test-of-multivariate-outliers",
+    "title": "6  Test of outliers",
+    "section": "6.2 Test of multivariate outliers",
+    "text": "6.2 Test of multivariate outliers\nA multivariate outlier is a combination of unusual scores on at least two variables. Both types of outliers can influence the outcome of statistical analyses. The multivariate outliers can be identified by the test of\n\n\nMahalanobis Distance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDecision Criteria\n\n\n\nIf the value of probability less than 0.001 then the observations will count as multivariate outliers.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Test of outliers</span>"
+    ]
+  },
+  {
+    "objectID": "07.html",
+    "href": "07.html",
+    "title": "7  Test of Data Reliability (Cronbach’s alpha)",
+    "section": "",
+    "text": "Cronbach’s alpha is a measure of internal consistency, that is, how closely related a set of items are as a group. It is considered to be a measure of scale reliability",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Test of Data Reliability (Cronbach's alpha)</span>"
+    ]
+  },
+  {
+    "objectID": "08.html",
+    "href": "08.html",
+    "title": "8  Exploratory Factor Analysis (EFA)",
+    "section": "",
+    "text": "In multivariate statistics, exploratory factor analysis (EFA) is a statistical method used to uncover the underlying structure of a relatively large set of variables. EFA is a technique within factor analysis whose overarching goal is to identify the underlying relationships between measured variables.\n\n\nAssumption:\n\n\nData must be Interval or Ratio measurement scale. E.g. Likert scale data or grouped data (1,2,3,4,5,6,7 point scale data).\n\nSample size must at least 4/5 times of variables.\n\nCorrelation Matrix: if values are near to +/- 1, and more than +.5 or -.5 these variable counts.\n\nKMO test: if value more than .5\n\nBartlett’s test: if value sig. value smaller than .05 or .01.\n\nEigenvalues: components or variables having value 1 and more than 1.\n\nFactor loading: if values exit in factors loading (item value more than .5).\n\nMulticollinearity: If in correlation matrix two items value is .80 or above, there is multicollinearity. Having same line, lying is the same lining.\n\nCommunality (component matrix): if value is near 1 or more than 70-80% (considered)- Scree plot: it show value more than 1.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exploratory Factor Analysis (EFA)</span>"
+    ]
+  },
+  {
+    "objectID": "09.html",
+    "href": "09.html",
+    "title": "9  Testing of means",
+    "section": "",
+    "text": "9.1 Non Parametric\nAssumption:\nWhen data are not normally distributed then non parametric test is done.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Testing of means</span>"
+    ]
+  },
+  {
+    "objectID": "09.html#non-parametric",
+    "href": "09.html#non-parametric",
+    "title": "9  Testing of means",
+    "section": "",
+    "text": "Sample size is small (less than 30)\n\nData are not from normally distributing\n\nWhen data is not normal any way\n\nRegular statistics can’t be done",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Testing of means</span>"
+    ]
+  },
+  {
+    "objectID": "09.html#parametric",
+    "href": "09.html#parametric",
+    "title": "9  Testing of means",
+    "section": "9.2 Parametric",
+    "text": "9.2 Parametric\nAssumptions:\n\nIf data comes from large and normal distribution, then parametric test.\n\nParametric Tests:\n\nA. One sample test\nB. Two sample test\n- Independent sample ‘t’ test\n- Paired sample ‘t’ test\nC. More than two sample test (ANOVA)\n\n\n9.2.1 One-sample t-test\n\nThe One Sample t Test compares a sample mean to a hypothesized population mean to determine whether the two means are significantly different.\n\nThe One Sample t Test determines whether the sample mean is statistically different from a known or hypothesized population mean. The One Sample t Test is a parametric test.\n\nThis test is also known as: Single Sample t Test\n\nThe variable used in this test is known as: Test variable\n\nIn a One Sample t Test, the test variable is compared against a “test value”, which is a known or hypothesized value of the mean in the population.\n\n\nThe One Sample t-test determines whether the sample mean is statistically different from a known or hypothesized population mean.\n\nThe sample data must comply three conditions\n\n1. Scale data\n2. Normally distributed data\n3. Only one sample data\n\n\nExample of one-sample t-test\n\nWe assume that the hypothesized population mean is 3.\n\n\n\n\n\n\n\nHypothesis\n\n\n\nNull Hypothesis: The sample mean is not significantly different from the hypothesized population mean\nAlternative Hypothesis: The sample mean is significantly different from the hypothesized population mean\n\n\n\nIf p (sig value) is less than 0.05, then we reject the null hypothesis.\n\n\n\n\n\n\n\n\n\n\n\n\nDecision\n\n\n\nSince the significant value less than 0.05 which means we reject the null hypothesis. It indicates that sample mean is significantly different from the hypothesized population mean.\n\n\n\n\n9.2.2 Independent Sample t-Test\nThe Independent Samples t Test compares the means of two independent groups in order to determine whether there is statistical evidence that the associated population means are significantly different. The Independent Samples t Test is a parametric test.\n\n\n\n\n\n\n\n\nHypothesis\n\n\n\nNull hypothesis: There is no significant difference between male and female towards GPA score.\n\nAlternate hypothesis: There is a significant difference between male and female towards GPA score.\n\n\n\nAfter Importing your data set, and providing names to variables, click on:\n\n\nANALYZE → COMPARE MEANS → INDEPENDENT SAMPLES T TEST\n\nT-TEST\n\n\nFor TEST VARIABLE, Select the dependent variable (GPA)\n\nFor GROUPING VARIABLE, Select the independent variable (Gender)\n\n\n\n\n\n\n\n\n\n\n\n\nDecision\n\n\n\nSince the significant value of P is less than 0.05 which is 0.011. It indicates that null hypothesis is rejected which refereeing that there is a significant difference between male and female for obtaining GPA score.\n\n\n\n\n\n\n9.2.3 Paired Samples T -test.\n\nSPSS paired samples t-test is a procedure for testing whether the means of two metric variables are equal in same population. Both variables have been measured on the same cases.\n\nAlthough “paired samples” suggests that multiple samples are involved, there’s really only one sample and two variables.\n\nBelow is the pre-test and post-test scores of a training program.\n\n\n\n\n\n\n\n\n\nHypothesis\n\n\n\nNull hypothesis: There is no significant difference between pretest score and post-test score.\n\nAlternate hypothesis: There is a significant difference between pre-test score and post-test score.\n\n\n\nAfter Importing your data set, and providing names to variables, click on:\n\n\nANALYZE → COMPARE MEANS → PAIRED SAMPLES T TEST\n\nFor PAIRED VARIABLES, Select the two dependent (response) variables (the analysis will be based on first variable minus second variable)\n\n\n\n\n\n\n\n\n\n\nResults Observation\n\n\n\nSince the sig value (p) is less than 0.05 which is 0.000 that means null hypothesis is rejected and alternate hypothesis is accepted. It indicates that there is a significant difference of training scores between pre-test and post-test.\n\n\n\n\n\n\n9.2.4 One-way ANOVA\n\nThe one-way analysis of variance (ANOVA) is used to determine whether there are any statistically significant differences between the means of three or more independent (unrelated) groups.\n\nExample of one-way ANOVA\n\n\n\n\n\nThere are three teaching method which are traditional, machine learning and both traditional & M.L method. The scores obtained by students under these three teaching method. Now, one-way ANOVA is used to determine whether there are any statistically significant differences among the scores obtained by these three methods.\n\n\n\n\n\n\n\n\n\n\nResults Observation\n\n\n\n\nThe sig value for between groups is higher than 0.05 that indicates to accept null hypothesis. Similarly, pairwise result also showed insignificant.\n\n\n\n\n\n\n9.2.5 Two-way ANOVA\n\nA test that allows one to make comparisons between the means of three or more groups of data, where two independent variables are considered. Two-Way ANOVA is an extension to the one-way ANOVA.\n\nExample of Two-way ANOVA\n\n\n\n\n\n\nFor example, family members, income, and expenditure are the three variables. Family members and income are the independent variables and nominal data. Expenditure is dependent variable and scale data. So, we will observe here;\n\n1. Is there any significant differences of amount of monthly income and amount of monthly expenditure on shampoo purchase?\n2. Is there any significant difference between number of family members in house and expenditure on shampoo purchase?\n\n\n\n\n\n\n\n\nHypothesis to test by Two-way ANOVA\n\n\n\nNull hypothesis 1: Amount of monthly expenditure on shampoo for different income do not differ\n\nNull hypothesis 2: Amount of monthly expenditure on shampoo for different number of family members in house do not differ\n\nNull hypothesis 3: Amount of monthly expenditure on shampoo for the interaction of income and number of family members do not differ\n\n\n\n\n\n\n\n\n\n\n\nResults Observation\n\n\n\nSince the income and family members with expenditure values are more than 0.05, therefore null hypothesis are accepted. However, for intercept null hypothesis is rejected as the p value is less than 0.05\n\n\n\n\n\n\n9.2.6 One-way Repeated Measure ANOVA\n\nOne-Way Repeated-Measures ANOVA. Analysis of Variance (ANOVA) is a common and robust statistical test that you can use to compare the mean scores collected from different conditions or groups in an experiment.\n\n\n\n\n\n\n\n\nHypothesis\n\n\n\nNull Hypothesis: There is no significant difference among the three different teaching methods.\nAlternative Hypothesis: There is a significant difference among the three different teaching methods.\n\n\n\n\n\n\n\n\n\n\n\n\n\nResults Observation\n\n\n\nSince the p-value is &lt;.05. The null hypothesis is rejected. Therefore, we can say there is significant difference among the teaching methods.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Testing of means</span>"
+    ]
+  },
+  {
+    "objectID": "10.html",
+    "href": "10.html",
+    "title": "10  Correlation Tests",
+    "section": "",
+    "text": "Correlation is a statistical technique that shows how strongly two variables are related to each other or the degree of association between the two\n\n\n\n\n\n\n\n\n\n\n\nCorrelation Decision Criteria\n\n\n\nIf r = from 0.75 to 0.95\nResult: highly positive linear correlation\n\nIf r = from 0.50 to 0.75\nResult: medium positive linear correlation\n\nIf r = from 0.25 to 0.50\nResult: slight positive linear correlation\n\nIf r = from 0.10 to 0.25\nResult: Weak positive linear correlation",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Correlation Tests</span>"
+    ]
+  },
+  {
+    "objectID": "11.html",
+    "href": "11.html",
+    "title": "11  Regression Analysis",
+    "section": "",
+    "text": "11.1 Simple Linear Regression",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Regression Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "11.html#simple-linear-regression",
+    "href": "11.html#simple-linear-regression",
+    "title": "11  Regression Analysis",
+    "section": "",
+    "text": "Linear regression models are used to show or predict the relationship between two variables or factors. The factor that is being predicted (the factor that the equation solves for) is called the dependent variable. The factors that are used to predict the value of the dependent variable are called the independent variables.\n\nThe simplest form of a regression analysis uses one dependent variable and one independent variable.\n\n\n\n\n\n\n\n\n\nHypothesis\n\n\n\nH1: Wage has a significant effect on employee performance\nH2: Welfare has a significant effect on employee performance\nH3: Fringe benefits has a significant effect on employee performance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResults Interpretation\n\n\n\nB-Value: Unstandardized coefficients are ‘raw’ coefficients produced by regression analysis when the analysis is performed on original, unstandardized variables. … An unstandardized coefficient represents the amount of change in a dependent variable Y due to a change of 1 unit of independent variable X.\n\nStandard Error: The standard error of a statistic is the standard deviation of its sampling distribution or an estimate of that standard deviation. If the parameter or the statistic is the mean, it is called the standard error of the mean.\n\nBeta: The beta values in regression are the estimated coefficients of the explanatory variables indicating a change on response variable caused by a unit change of respective explanatory variable keeping all the other explanatory variables constant/unchanged.\n\nSignificant t-value: The t-value measures the size of the difference relative to the variation in your sample data. Put another way, T is simply the calculated difference represented in units of standard error. The greater the magnitude of T, the greater the evidence against the null hypothesis. Null hypothesis is rejected if the t-value is more than or equal to 1.96 (two-tail) and 1.64 (one-tail)\n\nSignificant P-Value: The p-value for each term tests the null hypothesis that the coefficient is equal to zero (no effect). A low p-value (&lt; 0.05) indicates that you can reject the null hypothesis.\n\nConfidence interval: A 95% confidence interval is a range of values that you can be 95% certain contains the true mean of the population.\n\n\n\n\n\n\n\n\n\nR-Squired & Adjusted R-Squired\n\n\n\nR-squared: R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. … 100% indicates that the model explains all the variability of the response data around its mean.\n\nAdjusted R-squared: The adjusted R-squared is a modified version of R-squared that has been adjusted for the number of predictors in the model. The adjusted R-squared increases only if the new term improves the model more than would be expected by chance. It decreases when a predictor improves the model by less than expected by chance.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Regression Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "11.html#multiple-linear-regression",
+    "href": "11.html#multiple-linear-regression",
+    "title": "11  Regression Analysis",
+    "section": "11.2 Multiple Linear Regression",
+    "text": "11.2 Multiple Linear Regression\nMultiple linear regression (MLR), also known simply as multiple regression, is a statistical technique that uses several explanatory variables to predict the outcome of a response variable.\n\n\nAfter Importing your data set, and providing names to variables, click on:\n\n\nANALYZE → REGRESSION → LINEAR\n\nSelect the DEPENDENT VARIABLE\nSelect the INDEPENDENT VARAIABLES\nClick on STATISTICS, then ESTIMATES, CONFIDENCE INTERVALS, MODEL FIT\n\n\n\n\n\n\n\n\n\n\n\nResults Interpretation\n\n\n\nB-Value: Unstandardized coefficients are ‘raw’ coefficients produced by regression analysis when the analysis is performed on original, unstandardized variables. … An unstandardized coefficient represents the amount of change in a dependent variable Y due to a change of 1 unit of independent variable X.\n\nStandard Error: The standard error of a statistic is the standard deviation of its sampling distribution or an estimate of that standard deviation. If the parameter or the statistic is the mean, it is called the standard error of the mean.\n\nBeta: The beta values in regression are the estimated coefficients of the explanatory variables indicating a change on response variable caused by a unit change of respective explanatory variable keeping all the other explanatory variables constant/unchanged.\n\nSignificant t-value: The t-value measures the size of the difference relative to the variation in your sample data. Put another way, T is simply the calculated difference represented in units of standard error. The greater the magnitude of T, the greater the evidence against the null hypothesis. Null hypothesis is rejected if the t-value is more than or equal to 1.96 (two-tail) and 1.64 (one-tail)\n\nSignificant P-Value: The p-value for each term tests the null hypothesis that the coefficient is equal to zero (no effect). A low p-value (&lt; 0.05) indicates that you can reject the null hypothesis.\n\nConfidence interval: A 95% confidence interval is a range of values that you can be 95% certain contains the true mean of the population.\n\n\n\n\n\n\n\n\n\nR-Squired & Adjusted R-Squired\n\n\n\nR-squared: R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. … 100% indicates that the model explains all the variability of the response data around its mean.\n\nAdjusted R-squared: The adjusted R-squared is a modified version of R-squared that has been adjusted for the number of predictors in the model. The adjusted R-squared increases only if the new term improves the model more than would be expected by chance. It decreases when a predictor improves the model by less than expected by chance.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Regression Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "12  Summary",
+    "section": "",
+    "text": "In this module, we explored the complete process of data analysis using SPSS, covering both fundamental and advanced statistical techniques. Beginning with an introduction to the software and data input methods, we progressed through essential preparatory steps such as data transformation and descriptive statistics. Key diagnostic tests, including normality, outliers, and reliability assessments, were discussed to ensure the robustness of analyses.\n\nWe then delved into specific statistical techniques, from exploratory factor analysis to hypothesis testing methods such as t-tests and ANOVA, enabling comparisons and inferences across data sets. Finally, we examined correlation and regression analyses, providing tools for understanding relationships and predictive modeling.\n\nBy following this structured approach, users are equipped to handle various data analysis challenges effectively. This module serves as a practical guide for leveraging SPSS to extract meaningful insights, ensuring a comprehensive understanding of data and its implications.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]

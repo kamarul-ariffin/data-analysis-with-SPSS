@@ -1,0 +1,50 @@
+# Descriptive Statistics
+
+A descriptive statistic is a summary statistic that quantitatively describes or summarizes features of a collection of information, while descriptive statistics is the process of using and analyzing those statistics.\
+
+## Frequency Analysis
+
+After Importing your data set, and providing names to variables, click on:\
+
+::: {style="text-align: center;"}
+[ANALYZE → DESCRIPTIVE STATISTICS → FREQUENCIES]{style="color:red;"}
+:::
+
+Choose any variables to be analyzed and place them in box on right\
+Options include (For Categorical Variables):\
+
+- Frequency Tables\
+- Pie Charts, Bar Charts\
+
+![](images/slides/img_Page_026.png)
+
+![](images/slides/img_Page_027.png)
+
+![](images/slides/img_Page_028.png)
+
+![](images/slides/img_Page_029.png)
+
+![](images/slides/img_Page_030.png)
+
+## Numerical Data
+
+After Importing your dataset, and providing names to variables, click on:\
+
+::: {style="text-align: center;"}
+[ANALYZE → DESCRIPTIVE STATISTICS → DESCRIPTIVES]{style="color:red;"}
+:::
+
+Choose any variables to be analyzed and place them in box on right
+Options include:
+
+![](images/slides/img_Page_032.png)
+
+![](images/slides/img_Page_033.png)
+
+![](images/slides/img_Page_034.png)
+
+![](images/slides/img_Page_035.png)
+
+![](images/slides/img_Page_036.png)
+
+![](images/slides/img_Page_037.png)

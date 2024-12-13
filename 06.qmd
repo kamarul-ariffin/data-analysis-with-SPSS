@@ -1,0 +1,61 @@
+## Test of outliers
+
+[In statistics, an outlier is a data point that differs significantly from other observations. An outlier may be due to variability in the measurement or it may indicate experimental error;
+the outlers are sometimes excluded from the data set. An outlier can cause serious problems
+in statistical analyses.]{style="color:purple;"}\
+
+[There are two types of outliers;]{style="color:red;"}\
+[1. Univariate outliers (Z-Score)\
+2. Multivariate outliers (Mahalanobis Distance)]{style="color:blue;"}\
+
+[A univariate outlier is a data point that consists of an extreme value on one variable. A
+multivariate outlier is a combination of unusual scores on at least two variables. Both types
+of outliers can influence the outcome of statistical analyses.]{style="color:green;"}\
+
+## Test of Univariate outliers
+
+![](images/slides/img_Page_040.png)
+
+![](images/slides/img_Page_041.png)
+
+![](images/slides/img_Page_042.png)
+
+![](images/slides/img_Page_043.png)
+
+![](images/slides/img_Page_044.png)
+
+![](images/slides/img_Page_045.png)
+
+![](images/slides/img_Page_046.png)
+
+::: {.callout-note}
+## Univariate outliers criterion
+If the Z-Score Value beyond the value +3.29 to -3.29 for a large sample size (more than 80) then there is outliers. If the Z-Score Value beyond the value +2.50 to -2.50 for the case of small sample size (less than 80 samples) then there is outliers.
+:::
+
+## Test of multivariate outliers
+
+A multivariate outlier is a combination of unusual scores on at least two variables. Both types of outliers can influence the outcome of statistical analyses. The multivariate outliers can be identified by the test of\
+
+- Mahalanobis Distance
+
+![](images/slides/img_Page_049.png)
+
+![](images/slides/img_Page_050.png)
+
+![](images/slides/img_Page_051.png)
+
+![](images/slides/img_Page_052.png)
+
+![](images/slides/img_Page_053.png)
+
+![](images/slides/img_Page_054.png)
+
+![](images/slides/img_Page_055.png)
+
+![](images/slides/img_Page_056.png)
+
+::: {.callout-note}
+## Decision Criteria
+If the value of probability less than 0.001 then the observations will count as multivariate outliers.
+:::

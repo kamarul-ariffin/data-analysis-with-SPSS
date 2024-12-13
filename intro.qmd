@@ -1,0 +1,51 @@
+# Introduction
+
+## Types of Variables
+
+<div>
+  <div style="float: right; position: relative; top: 0px; padding: 30px;">
+  ![](images/bicycle.png)
+  </div>
+What are variables you would consider in buying a second hand bike?\
+
+- Brand (Trek, Raleigh)\
+- Type (road, mountain, racer)\
+- Components (Shimano, no name)\
+- Age\
+- Condition (Excellent, good, poor)\
+- Price\
+- Frame size\
+- Number of gears\
+</div>
+
+## Parametric vs Non-parametric
+
+- Parametric stats are more powerful than non-parametric stats- for real numbers- example like t-test\
+- Non-parametric stats are not as powerful but good for category variables – example like Mann-Whitney U (Likert)\
+
+## Types of Scales
+
+::: {.callout-tip}
+## Nominal
+
+objects or people are categorized according to some criterion (gender, job category)
+:::
+
+::: {.callout-tip}
+## Ordinal
+
+Categories which are ranked according to characteristics (income- low, moderate, high)
+:::
+
+::: {.callout-tip}
+## Interval
+
+contain equal distance between units of measure- but no zero (calendar years, temperature)
+:::
+
+::: {.callout-tip}
+## Ratio
+
+has an absolute zero and consistent intervals (distance, weight)
+:::
+

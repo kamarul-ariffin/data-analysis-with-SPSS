@@ -1,0 +1,20 @@
+# Data Input in SPSS
+
+The following are the most common data input when doing a survey research.\
+
+## Data Inputs from Questionnaire to SPSS
+
+![](images/demographic.jpg)
+
+## Likert Scale Data
+
+![](images/scale.jpg)
+
+**ATTITUDE**\
+This section is to understand your feelings towards knowledge sharing. Please circle the appropriate number on each scale.\
+
+![](images/attitude.jpg)
+
+![](images/slides/img_Page_013.png)
+
+![](images/slides/img_Page_014.png)

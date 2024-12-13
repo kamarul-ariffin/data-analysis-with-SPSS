@@ -1,0 +1,19 @@
+# Data Transformation
+
+To transform data, you perform a mathematical operation on each observation, then use these transformed numbers in your statistical test.\
+
+![](images/slides/img_Page_016.png)
+
+![](images/slides/img_Page_017.png)
+
+![](images/slides/img_Page_018.png)
+
+![](images/slides/img_Page_019.png)
+
+![](images/slides/img_Page_020.png)
+
+![](images/slides/img_Page_021.png)
+
+![](images/slides/img_Page_022.png)
+
+![](images/slides/img_Page_023.png)

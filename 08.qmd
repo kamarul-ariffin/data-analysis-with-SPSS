@@ -1,0 +1,48 @@
+# Exploratory Factor Analysis (EFA)
+
+<div>
+  <div style="float: right; position: relative; top: 0px; padding: 30px;">
+  ![](images/efa.png)
+  </div>
+In multivariate statistics, exploratory factor analysis (EFA) is a statistical method used to uncover the underlying structure of a relatively large set of variables. EFA is a technique within factor analysis whose overarching goal is to identify the underlying relationships between measured variables.\
+</div>
+
+[**Assumption:**]{style="color:red;"}\
+
+- Data must be Interval or Ratio measurement scale. E.g. Likert scale data or grouped data (1,2,3,4,5,6,7 point scale data).\
+- Sample size must at least 4/5 times of variables.\
+- Correlation Matrix: if values are near to +/- 1, and more than +.5 or -.5 these variable counts.\
+- KMO test: if value more than .5\
+- Bartlett’s test: if value sig. value smaller than .05 or .01.\
+- Eigenvalues: components or variables having value 1 and more than 1.\
+- Factor loading: if values exit in factors loading (item value more than .5).\
+- Multicollinearity: If in correlation matrix two items value is .80 or above, there is multicollinearity. Having same line, lying is the same lining.\
+- Communality (component matrix): if value is near 1 or more than 70-80% (considered)- Scree plot: it show value more than 1.\
+
+![](images/slides/img_Page_068.png)
+
+![](images/slides/img_Page_069.png)
+
+![](images/slides/img_Page_070.png)
+
+![](images/slides/img_Page_071.png)
+
+![](images/slides/img_Page_072.png)
+
+![](images/slides/img_Page_073.png)
+
+![](images/slides/img_Page_074.png)
+
+![](images/slides/img_Page_075.png)
+
+![](images/slides/img_Page_076.png)
+
+![](images/slides/img_Page_077.png)
+
+![](images/slides/img_Page_078.png)
+
+![](images/slides/img_Page_079.png)
+
+![](images/slides/img_Page_080.png)
+
+
